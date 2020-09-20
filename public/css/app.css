@@ -1,0 +1,28 @@
+.about-bg{
+    opacity: 0.7;
+    background-color: white;
+}
+.about h1{
+    color: #1a202c;
+}
+.about p{
+    color: #000000;
+}
+body{
+    background-image: url("/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.about {
+    background: #7f7f7f;
+    background:rgba(255,255,255,0.5);
+}
+.files-list{
+    background-color: snow;
+}
+.files-list a{
+    background-color: #e5e2e2;
+}
+.upload{
+    border: 2px black solid;
+}
