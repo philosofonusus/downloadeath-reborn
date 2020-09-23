@@ -10,7 +10,7 @@ FILE SYSTEM
                     Downloads
                 </h1>
                 @foreach($files as $el)
-                <li class="list-group-items mb-1"><a class="btn btn-light" href="{{ Storage::url($el) }}" download>{{ $el }}</a></li>
+                <li  class="list-group-items mb-1"><a class="btn btn-light" href="{{ Storage::url($el) }}" download>{{ $el }}</a></li>
                 @endforeach
             </ul>
             <a role="button" class="btn btn-secondary d-flex justify-content-center" href="{{ route('uploads') }}">UPLOAD</a>

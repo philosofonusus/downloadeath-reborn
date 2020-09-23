@@ -26,3 +26,6 @@ body{
 .upload{
     border: 2px black solid;
 }
+.upload button{
+    background-color: #7f7f7f;
+}

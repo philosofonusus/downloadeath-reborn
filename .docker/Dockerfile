@@ -28,5 +28,3 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN chown -R root:www-data /var/www/html \
     && a2enmod rewrite
-
-CMD ('php artisan route:cache', 'php artisan config:cache', 'php artisan cache:clear')

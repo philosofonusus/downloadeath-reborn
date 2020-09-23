@@ -19,5 +19,8 @@ Route::get('/', function () {
 Route::get('/file-upload', function () {
     return view('upload');
 })->name('uploads');
+Route::get('/file', function () {
+    return view('files');
+})->name('downloads');
 Route::get('/file', [App\Http\Controllers\FilesController::class, 'list'])->name('list');
 Route::post('/file/upload', [App\Http\Controllers\FilesController::class, 'upload'])->name('upload');
