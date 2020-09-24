@@ -11,6 +11,6 @@
         </form>
     </div>
     <div class="d-flex justify-content-center mt-2">
-        <a href="{{ url('/file') }}"><button class="btn btn-secondary">Go Back</button></a>
+        <a href="{{ url('/') }}"><button class="btn btn-secondary">Go Back</button></a>
     </div>
 @endsection

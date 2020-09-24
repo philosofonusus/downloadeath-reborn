@@ -11,7 +11,9 @@
 body{
     background-image: url("/img/bg.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position-x: center;
+    background-position-y: 10%;
+    background-size: auto;
 }
 .about {
     background: #7f7f7f;
@@ -28,4 +30,9 @@ body{
 }
 .upload button{
     background-color: #7f7f7f;
+}
+@media (max-width: 333px) {
+    .fix-size a{
+       font-size: 50%;
+    }
 }

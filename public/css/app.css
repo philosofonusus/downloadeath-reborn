@@ -1,28 +1,48 @@
-.about-bg{
-    opacity: 0.7;
-    background-color: white;
+.about-bg {
+  opacity: 0.7;
+  background-color: white;
 }
-.about h1{
-    color: #1a202c;
+
+.about h1 {
+  color: #1a202c;
 }
-.about p{
-    color: #000000;
+
+.about p {
+  color: #000000;
 }
-body{
-    background-image: url("/img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+
+body {
+  background-image: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 10%;
+  background-size: auto;
 }
+
 .about {
-    background: #7f7f7f;
-    background:rgba(255,255,255,0.5);
+  background: #7f7f7f;
+  background: rgba(255, 255, 255, 0.5);
 }
-.files-list{
-    background-color: snow;
+
+.files-list {
+  background-color: snow;
 }
-.files-list a{
-    background-color: #e5e2e2;
+
+.files-list a {
+  background-color: #e5e2e2;
 }
-.upload{
-    border: 2px black solid;
+
+.upload {
+  border: 2px black solid;
 }
+
+.upload button {
+  background-color: #7f7f7f;
+}
+
+@media (max-width: 333px) {
+  .fix-size a {
+    font-size: 50%;
+  }
+}
+

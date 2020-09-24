@@ -12,15 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-Route::get('/file-upload', function () {
-    return view('upload');
-})->name('uploads');
-Route::get('/file', function () {
-    return view('files');
-})->name('downloads');
-Route::get('/file', [App\Http\Controllers\FilesController::class, 'list'])->name('list');
-Route::post('/file/upload', [App\Http\Controllers\FilesController::class, 'upload'])->name('upload');
+Route::middleware('throttle:60,1')->group(function () {
+    Route::get('/upload', function () {
+        return view('upload');
+    })->name('uploads');
+    Route::get('/', function () {
+        return view('files');
+    })->name('downloads');
+    Route::get('/', [App\Http\Controllers\FilesController::class, 'list'])->name('list');
+    Route::post('/file-upload', [App\Http\Controllers\FilesController::class, 'upload'])->name('upload');
+});
