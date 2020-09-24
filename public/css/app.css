@@ -44,5 +44,11 @@ body {
   .fix-size a {
     font-size: 50%;
   }
+
+  .upload-rs {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
