@@ -4,6 +4,6 @@ services:
     build:
       context: .
       dockerfile: .docker/Dockerfile
-    image: 'downloadeath'
+    image: downloadeath
     ports:
-      - 80:80
+      - 9999:80
